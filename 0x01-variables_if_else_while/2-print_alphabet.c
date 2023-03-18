@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int main (void)
+int main(void)
 {
  char b;
  for (b = 'a'; c <= 'z'; c++)
