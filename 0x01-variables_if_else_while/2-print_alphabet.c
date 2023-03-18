@@ -4,8 +4,8 @@
 int main(void)
 {
  char b;
- for (b = 'a'; c <= 'z'; c++)
- putchar(c);
+ for (b = 'a'; b <= 'z'; b++)
+ putchar(b);
  putchar('\n');
  return (0);
 }
