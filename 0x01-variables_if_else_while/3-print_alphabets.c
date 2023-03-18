@@ -1,11 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main(void)
 {
-	char b;
+	char lower;
 
-	for (b = 'a'; b <= 'z'; b++)
-	putchar(b);
+	for (lower = 'a'; lower <= 'z'; lower++)
+	putchar(lower);
+	for (lower = 'A'; lower <= 'Z'; lower++)
+	putchar(lower);
 	putchar('\n');
 	return (0);
 }
