@@ -7,7 +7,7 @@ int main(void)
 int g, m;
 for (g = '0'; g < '9'; g++)
 {
-for (m = g +1; m <= '9'; m++)
+for (m = g + 1; m <= '9'; m++)
 {
 if (m != g)
 {
