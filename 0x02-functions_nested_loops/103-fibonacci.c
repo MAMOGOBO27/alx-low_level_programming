@@ -17,7 +17,7 @@ int main(void)
 	if (k % 2 == 0)
 	totsum += k;
 	j = k - j;
-	++i
+	++i;
 	}
 	printf("%ld\n", totsum);
 	return (0);
