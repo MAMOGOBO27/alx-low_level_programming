@@ -2,7 +2,7 @@
 
 /**
  * main - prints the sum of even fibonacci numbers
- * less than 4 Million
+ * less than 4000000.
  * Return: Nothing
  */
 
