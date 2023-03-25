@@ -5,7 +5,7 @@
  * Return: 10 times the number
  */
 
-void more_number(void)
+void more_numbers(void)
 {
 	int x, y;
 
