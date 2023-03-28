@@ -2,7 +2,8 @@
 
 /**
  * reset_to_98
- * the value it points 0 to 98
+ * the value it points to 98
+ * @n: An integer input pointer
  *
  * Return: nothing
  */
