@@ -48,7 +48,7 @@ int count_words(char *str)
  * @str: The String to be split.
  *
  * Return : If str  = NULL, str = "", or the function fails -NULL.
- * 		otherwise - a pointer to an array of string (words).
+ * otherwise - a pointer to an array of string (words).
  */
 char **strtow(char *str)
 {
@@ -59,7 +59,7 @@ char **strtow(char *str)
 	return (NULL);
 
 	words = count_words(str);
-	if ( words == 0)
+	if (words == 0)
 	return (NULL);
 
 	strings = malloc(sizeof(char *) * (words + 1));
