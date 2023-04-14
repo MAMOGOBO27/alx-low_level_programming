@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
  * *string_nconcat - Concatenates two strings of any size
  * @s1: the first string to concatenate
@@ -30,9 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
         str = malloc(sizeof(char) * l + 1);
 	if (str == NULL)
         return (NULL);
-
         k = 0;
-
         while (j < l)
         {
         if (j <= i)
