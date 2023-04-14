@@ -5,7 +5,6 @@
  * @nmemb: number of members
  * @size: size
  * Return: Nothing
- *
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -19,8 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	p = malloc(l);
 
 	if (p == NULL)
-	return (NULL);
-	
+	return (NULL)
 	while (i < l)
 	{
 	p[i] = 0;
