@@ -6,7 +6,7 @@
  * @s1: the first string to concatenate
  * @s2: the second string to concatenate
  * @n: the value
- * Return: the two strings concatenated
+ * Return: pointer to the resulting string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -22,6 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
         i++;
         while (s2[k])
         k++;
+
 	if (n >= k)
 	l = i + k;
 	else
@@ -29,6 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
         str = malloc(sizeof(char) * l + 1);
 	if (str == NULL)
         return (NULL);
+
         k = 0;
         while (j < l)
         {
