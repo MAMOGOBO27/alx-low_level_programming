@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -33,7 +34,7 @@ char *create_xarray(int size)
 {
 	char *array;
 	int index;
-	
+
 	array = malloc(sizeof(char) * size);
 
 	if (array == NULL)
@@ -56,7 +57,6 @@ char *iterate_zeroes(char *str)
 {
 	while (*str && *str == '0')
 	str++;
-	
 	return (str);
 }
 
@@ -178,7 +178,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 int main(int argc, char *argv[])
 {
 	char *final_prod, *next_prod;
-	int size, index, digit, zeroes =0;
+	int size, index, digit, zeroes = 0;
 
 	if (argc != 3)
 	{
@@ -197,8 +197,8 @@ int main(int argc, char *argv[])
 	}
 
 	size = find_len(argv[1]) + find_len(argv[2]);
-	final_prod = create_xarray(size +1);
-	next_prod = create_xarray(size +1)
+	final_prod = create_xarray(size + 1);
+	next_prod = create_xarray(size + 1)
 
 	for (index = find_len(argv[2]) - 1; index >= 0; index--
 	{
@@ -215,5 +215,5 @@ int main(int argc, char *argv[])
 	free(next_prod);
 	free(final_prod);
 
-	return(0);
+	return (0);
 }
