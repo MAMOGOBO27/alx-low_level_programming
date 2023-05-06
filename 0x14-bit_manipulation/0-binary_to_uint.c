@@ -1,11 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * binary_to_unit - it changes the binary number to unsigned integer
- * @*b: the string variable that cointsins the binary number
+ * @b: the string variable that cointsins the binary number
  *
  * Return: The converted number
  */
@@ -23,6 +22,5 @@ unsigned int binary_to_uint(const char *b)
 	return (0);
 	dec_val = 2 * dec_val + (b[n] - '0');
 	}
-
 	return (dec_val);
 }
