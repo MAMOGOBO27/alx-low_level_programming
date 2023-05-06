@@ -4,17 +4,20 @@
 #include <string.h>
 
 /**
- * set_bit - sets the bit to index 1
+ * get_bit - sets the bit to index 1
  * @n: Number to pointer
  * @index: is the index, starting from 0 of the bit you want to get
  *
- * Return: 1 (success), -1 (failure)
+ * Return: value of the bit
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (index > 63)
-	return (-1);
+int bit_val;
 
-	*n = ((1UL << index) | *n);
-	return (1);
+if (index > 63)
+return (-1);
+
+bit_val = (n >> index) & 1;
+
+return (bit_val);
 }
