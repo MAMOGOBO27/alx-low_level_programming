@@ -5,7 +5,7 @@
 
 /**
  * get_endianness - checks the endianness
- * Retuen: 0 (Big). 1 (Small/Little)
+ * Return: 0 (Big). 1 (Small/Little)
  */
 int get_endianness(void)
 {
