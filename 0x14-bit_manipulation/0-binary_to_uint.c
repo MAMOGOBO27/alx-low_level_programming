@@ -5,7 +5,7 @@
 
 /**
  * binary_to_unit - it changes the binary number to unsigned integer
- * @b: the string variable that cointsins the binary number
+ * @*b: the string variable that cointsins the binary number
  *
  * Return: The converted number
  */
